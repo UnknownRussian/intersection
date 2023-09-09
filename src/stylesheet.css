@@ -1,0 +1,439 @@
+#road{
+    grid-template-columns: repeat(21, 5%);
+    grid-template-rows: repeat(21, 5%);
+    display: grid;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+}
+
+#road-x{
+    grid-row: 8 / 15;
+    grid-column: 1 / 22;
+    grid-template-rows: repeat(2, 50%);
+    display: grid;
+}
+
+#carpath-x-1{
+    grid-row: 1;
+    padding-top: 20px;
+    padding-left: 600px;
+    transition: 1s;
+}
+#car-x-1{
+    height: 100px;
+    width: 200px;
+    background-image: url("carx1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carpath-x-2{
+    grid-row: 2;
+    padding-top: 20px;
+    padding-left: 40px;
+    transition: 1s;
+}
+#car-x-2{
+    height: 100px;
+    width: 200px;
+    background-image: url("carx2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#road-y{
+    grid-row: 1 / 22;
+    grid-column: 8 / 15;
+    grid-template-columns: repeat(2, 50%);
+    display: grid;
+}
+
+#carpath-y-1{
+    grid-column: 1;
+    padding-left: 20px;
+    padding-top: 40px;
+    transition: 1s;
+}
+#car-y-1{
+    height: 200px;
+    width: 100px;
+    background-image: url("cary1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carpath-y-2{
+    grid-column: 2;
+    padding-left: 20px;
+    padding-top: 600px;
+    transition: 1s;
+}
+#car-y-2{
+    height: 200px;
+    width: 100px;
+    background-image: url("cary2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sidewalk{
+    background-color: grey;
+}
+
+#sidewalk1-1{
+    grid-row: 7;
+    grid-column: 1 / 8;
+}
+#sidewalk1-2{
+    grid-row: 1 / 7;
+    grid-column: 7;
+}
+#sidewalk2-1{
+    grid-row: 7;
+    grid-column: 15 / 22;
+}
+#sidewalk2-2{
+    grid-row: 1 / 7;
+    grid-column: 15;
+}
+#sidewalk3-1{
+    grid-row: 15;
+    grid-column: 1 / 8;
+}
+#sidewalk3-2{
+    grid-row: 15 / 22;
+    grid-column: 7;
+}
+#sidewalk4-1{
+    grid-row: 15;
+    grid-column: 15 / 22;
+}
+#sidewalk4-2{
+    grid-row: 15 / 22;
+    grid-column: 15;
+}
+
+#road-design{
+    grid-template-columns: repeat(21, 5%);
+    grid-template-rows: repeat(21, 5%);
+    display: grid;
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+    position: fixed;
+}
+
+#road-x-design{
+    grid-row: 8 / 15;
+    grid-column: 1 / 22;
+    background-color: rgb(61, 61, 61);
+}
+#road-y-design{
+    grid-row: 1 / 22;
+    grid-column: 8 / 15;
+    background-color: rgb(61, 61, 61);
+}
+#stop-line-1{
+    grid-row: 7;
+    grid-column: 8 / 11;
+    background-color: white;
+}   
+#stop-line-2{
+    grid-row: 15;
+    grid-column: 12 / 15;
+    background-color: white;
+}   
+#stop-line-3{
+    grid-row: 12 / 15;
+    grid-column: 7;
+    background-color: white;
+}   
+#stop-line-4{
+    grid-row: 8 / 11;
+    grid-column: 15;
+    background-color: white;
+}
+#line-1{
+    grid-row: 5 / 8;
+    grid-column: 11;
+    background-color: white;
+}
+#line-2{
+    grid-row: 2 / 4;
+    grid-column: 11;
+    background-color: white;
+}
+#line-3{
+    grid-row: 15 / 18;
+    grid-column: 11;
+    background-color: white;
+}
+#line-4{
+    grid-row: 19 / 21;
+    grid-column: 11;
+    background-color: white;
+}
+#line-5{
+    grid-row: 11;
+    grid-column: 5 / 8;
+    background-color: white;
+}
+#line-6{
+    grid-row: 11;
+    grid-column: 2 / 4;
+    background-color: white;
+}
+#line-7{
+    grid-row: 11;
+    grid-column: 15 / 18;
+    background-color: white;
+}
+#line-8{
+    grid-row: 11;
+    grid-column: 19 / 21;
+    background-color: white;
+}
+
+#road-lights{
+    grid-template-columns: repeat(21, 5%);
+    grid-template-rows: repeat(21, 5%);
+    display: inline-grid;
+    height: 800px;
+    width: 800px;
+    z-index: 1;
+    position: fixed;
+}
+#streetLight1{
+    grid-row: 4 / 6;
+    grid-column: 7;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
+    display: grid;
+}
+#streetLight1Red{
+    grid-row: 1;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight1Yellow{
+    grid-row: 2;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: rgb(120, 66, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight1Green{
+    grid-row: 3;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: darkgreen;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#streetLight2{
+    grid-row: 4 / 6;
+    grid-column: 15;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
+    display: grid;
+}
+#streetLight2Red{
+    grid-row: 1;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight2Yellow{
+    grid-row: 2;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: rgb(120, 66, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight2Green{
+    grid-row: 3;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: darkgreen;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#streetLight3{
+    grid-row: 13 / 15;
+    grid-column: 7;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
+    display: grid;
+}
+#streetLight3Red{
+    grid-row: 1;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight3Yellow{
+    grid-row: 2;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: rgb(120, 66, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight3Green{
+    grid-row: 3;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: darkgreen;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#streetLight4{
+    grid-row: 13 / 15;
+    grid-column: 15;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
+    display: grid;
+}
+#streetLight4Red{
+    grid-row: 1;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: red; /*red*/
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight4Yellow{
+    grid-row: 2;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: rgb(120, 66, 0); /*yellow*/
+    border-radius: 50%;
+    display: inline-block;
+}
+#streetLight4Green{
+    grid-row: 3;
+    grid-column: 1;
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    background-color: darkgreen; /*greenyellow*/
+    border-radius: 50%;
+    display: inline-block;
+}
+#pole-1-grid{
+    grid-row: 6 / 8;
+    grid-column: 7;
+    
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    display: grid;
+}
+#pole-1{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: black;
+}
+#pole-2-grid{
+    grid-row: 6 / 8;
+    grid-column: 15;
+    
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    display: grid;
+}
+#pole-2{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: black;
+}
+#pole-3-grid{
+    grid-row: 15 / 17;
+    grid-column: 7;
+    
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    display: grid;
+}
+#pole-3{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: black;
+}
+#pole-4-grid{
+    grid-row: 15 / 17;
+    grid-column: 15;
+    
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    display: grid;
+}
+#pole-4{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: black;
+}
+   
